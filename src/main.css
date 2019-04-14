@@ -6,44 +6,60 @@ body {
   margin: 0;
 }
 
+:root {
+  --inputColor1: #f0f4f7;
+  --LATO: "Lato", sans-serif;
+}
 
 body {
   margin: 0;
 }
 
 .conteiner {
-
   flex-direction: column;
 }
 
 .firstSection {
   height: 100vh;
+  width: 1440px;
   background: url("images/Frame.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
-
-
-};
-
-
-.content {
-
-  color: red;
-  background-color: red;
 }
 
-/*.Content {*/
-/*width: 500px;*/
-/*background-color: aqua;*/
-/*padding-left: 100px;*/
-/*margin: 20px;*/
-/*}*/
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 163px;
+}
 
-/*.afsdfsdsd {*/
-/*background-color: yellow;*/
-/*width: 200px;*/
-/*height: 300px;*/
-/*padding-left: 100px;*/
+.logo {
+  padding-top: 55px;
+}
 
-/*}*/
+.main_h1 {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  font-family: var(--LATO);
+  margin-bottom: 27px;
+}
+
+.main_content {
+  width: 540px;
+  padding-top: 100px;
+}
+
+.main_info {
+  font-family: var(--LATO);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.links {
+  width: 348px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
