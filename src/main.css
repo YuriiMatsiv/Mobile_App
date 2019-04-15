@@ -12,6 +12,7 @@ body {
   --Color1: #eee;
   --Color_h3: #00adee;
   --Color_text: #4f4f4f;
+  --Color_for_section: #f4f6f9;
   --Link_color: #00adee;
   --LATO: "Lato", sans-serif;
 }
@@ -31,7 +32,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
-  background-color: #F4F6F9;;
+  background-color: var(--Color_for_section);
 }
 
 .content {
