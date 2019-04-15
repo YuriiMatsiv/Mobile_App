@@ -253,5 +253,47 @@ input[type="checkbox"]::before {
 input:checked[type="checkbox"]::before {
   left: 12px;
 }
-
 /*end of button-click*/
+
+.thirdSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thirdSectionLeft {
+  padding: 202px 0 250px 162px;
+  flex-basis: 50%;
+}
+
+.right_thirdSection {
+  flex-basis: 50%;
+  align-self: center;
+
+}
+
+.text_thirdSection {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--Color_text);
+  width: 480px;
+  padding: 2px 0 6px 1px;
+}
+
+.link_thirdSection {
+  text-decoration: none;
+  color: var(--Link_color);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.lastOne {
+  margin-bottom: 50px;
+}
+
+.phone_photo {
+  width: 627px;
+  height: 610px;
+  object-fit: contain;
+  margin-left: 25px;
+}
