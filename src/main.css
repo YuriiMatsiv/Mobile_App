@@ -13,6 +13,8 @@ body {
   --Color_h3: #00adee;
   --Color_text: #4f4f4f;
   --Color_for_section: #f4f6f9;
+  --Color_for_round: #00adee;
+  --Color_blue: #00adee;
   --Link_color: #00adee;
   --LATO: "Lato", sans-serif;
 }
@@ -79,7 +81,9 @@ body {
 }
 
 .left-side {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 100%), url("images/Background2.png");
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0,
+  rgba(255, 255, 255, 1) 100%),
+    url("images/Background2.png");
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.1);
   position: relative;
@@ -171,7 +175,6 @@ body {
   position: absolute;
   top: 296px;
   left: 269px;
-
 }
 
 .rightside {
@@ -180,6 +183,7 @@ body {
 
 .rightside {
   padding: 118px 0 0 123px;
+  background-color: white;
 
 }
 
@@ -255,6 +259,7 @@ input[type="checkbox"]::before {
 input:checked[type="checkbox"]::before {
   left: 12px;
 }
+
 /*end of button-click*/
 
 .thirdSection {
@@ -265,12 +270,6 @@ input:checked[type="checkbox"]::before {
 .thirdSectionLeft {
   padding: 202px 0 250px 162px;
   flex-basis: 50%;
-}
-
-.right_thirdSection {
-  flex-basis: 50%;
-  align-self: center;
-
 }
 
 .text_thirdSection {
@@ -293,9 +292,102 @@ input:checked[type="checkbox"]::before {
   margin-bottom: 50px;
 }
 
+.right_thirdSection {
+  flex-basis: 50%;
+  position: relative;
+}
+
 .phone_photo {
   width: 627px;
   height: 610px;
   object-fit: contain;
-  margin-left: 25px;
+  position: absolute;
+  top: 81px;
+  left: 28px;
+}
+
+.ring_imege {
+  position: absolute;
+  top: 132px;
+  left: 175px;
+}
+
+.incoming_coll_image {
+  position: absolute;
+  top: 449px;
+  left: 429px;
+}
+
+.first_round {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 1px dashed var(--Color_for_round);
+  position: absolute;
+  top: 156px;
+  left: 160px;
+  z-index: -1;
+}
+
+.second_round {
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  border: 1px dashed var(--Color_for_round);
+  position: absolute;
+  top: 56px;
+  left: 59px;
+  z-index: -1;
+}
+
+.third_round {
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  border: 1px solid var(--Color_for_round);
+  position: absolute;
+  top: -44px;
+  left: -40px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.forth_round {
+  height: 1000px;
+  width: 1000px;
+  border-radius: 50%;
+  border: 1px solid var(--Color_for_round);
+  position: absolute;
+  top: -142px;
+  left: -141px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.fifth_round {
+  height: 1200px;
+  width: 1200px;
+  border-radius: 50%;
+  border: 1px solid var(--Color_for_round);
+  position: absolute;
+  top: -241px;
+  left: -240px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.six_round {
+  height: 1400px;
+  width: 1400px;
+  border-radius: 50%;
+  border: 1px solid var(--Color_for_round);
+  position: absolute;
+  top: -347px;
+  left: -340px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.features {
+  background-color: var(--Color_blue);
 }
