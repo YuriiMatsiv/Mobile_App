@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: var(--LATO);
-  /*overflow: hidden;*/
+
 }
 
 body {
@@ -14,6 +14,7 @@ body {
   --Color1: #eee;
   --Color_h3: #00adee;
   --Color_text: #4f4f4f;
+  --ColorWhiteText: #ffffff;
   --Color_for_section: #f4f6f9;
   --Color_for_round: #00adee;
   --Color_blue: #00adee;
@@ -23,7 +24,7 @@ body {
 
 .conteiner {
   flex-direction: column;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .firstSection {
@@ -34,6 +35,7 @@ body {
   background-size: auto;
   background-position: right top;
   background-color: var(--Color_for_section);
+  overflow: hidden;
 }
 
 .content {
@@ -82,7 +84,7 @@ body {
 .left-side {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0,
   rgba(255, 255, 255, 1) 100%),
-  url("images/Background2.png");
+    url("images/Background2.png");
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.1);
   position: relative;
@@ -265,6 +267,7 @@ input:checked[type="checkbox"]::before {
   display: flex;
   justify-content: space-between;
   height: 719px;
+  overflow: hidden;
 }
 
 .thirdSectionLeft {
@@ -390,17 +393,21 @@ input:checked[type="checkbox"]::before {
 /*Features That Will Tailor Your Experience*/
 .features {
   background-color: var(--Color_blue);
+  overflow: hidden;
+
 }
 
 .features__title {
   padding-top: 53px;
   padding-left: 100px;
   margin-bottom: 63px;
+  color: var(--ColorWhiteText)
 }
 
 .page__title {
   font-size: 28px;
   text-align: center;
+
 }
 
 .features__wrap {
@@ -414,11 +421,12 @@ input:checked[type="checkbox"]::before {
 .features-block {
   width: 310px;
   list-style-type: none;
-}
+  }
 
 .features-block__text {
   margin-top: 10px;
   line-height: 23px;
+  color: var(--ColorWhiteText)
 }
 
 .features-block--indents {
@@ -429,4 +437,89 @@ input:checked[type="checkbox"]::before {
 .features-block__text::before {
   content: "• ";
   color: var(--Color1);
+}
+
+.links-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 140px;
+  width: 1123px;
+  list-style-type: none;
+  padding-bottom: 50px;
+}
+
+.sport-chanel__title {
+  padding-bottom: 20px;
+  padding-left: 92px;
+}
+
+.promotion {
+  display: flex;
+  justify-content: start;
+  overflow: hidden;
+
+}
+
+.promotion__main {
+  width: 605px;
+  padding-left: 78px;
+
+}
+
+.promotion__links {
+  width: 348px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.promotion__title {
+  padding-top: 81px;
+
+
+}
+
+.promotion__title--rightSide {
+  font-size: 28px;
+}
+
+.promotion__text {
+  font-family: var(--LATO);
+  font-size: 16px;
+  line-height: 25px;
+  padding-top: 13px;
+
+}
+
+footer {
+  background-color: var(--Color_blue);
+  overflow: hidden;
+
+}
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 127px;
+  padding-left: 162px;
+
+}
+
+.footer__navigation {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: space-between;
+
+}
+
+.footer__navigation-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--ColorWhiteText);
+  padding-right: 37px;
+
 }
