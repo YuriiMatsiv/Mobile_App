@@ -1,13 +1,11 @@
 * {
   box-sizing: border-box;
   font-family: var(--LATO);
-
 }
 
 body {
   margin: 0;
   padding: 0;
-
 }
 
 :root {
@@ -35,9 +33,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .firstSection {
-  background-color: var(--Color_for_section);
-  background: url("images/Frame.png");
+  background: url("images/Frame.png") var(--Color_for_section);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right top;
@@ -51,7 +49,6 @@ body {
 
 .logo {
   padding-top: 55px;
-
 }
 
 .main_h1 {
@@ -191,7 +188,6 @@ body {
 .rightside {
   padding: 118px 0 0 123px;
   background-color: white;
-
 }
 
 .text_h3 {
@@ -221,10 +217,8 @@ body {
   color: var(--Link_color);
   font-size: 16px;
   line-height: 21px;
-
 }
 
-/* click*/
 .center {
   position: absolute;
   top: 88%;
@@ -266,8 +260,6 @@ input[type="checkbox"]::before {
 input:checked[type="checkbox"]::before {
   left: 12px;
 }
-
-/*end of button-click*/
 
 .thirdSection {
   display: flex;
@@ -396,11 +388,11 @@ input:checked[type="checkbox"]::before {
   z-index: -1;
   opacity: 0.1;
 }
-/*Features That Will Tailor Your Experience*/
+
 .features {
   background-color: var(--Color_blue);
   overflow: hidden;
-
+  height: 735px;
 }
 
 .features__title {
@@ -419,8 +411,9 @@ input:checked[type="checkbox"]::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-left: 125px;
+  padding-left: 167px;
   width: 1440px;
+  margin: 0 auto;
 }
 
 .features-block {
@@ -444,19 +437,113 @@ input:checked[type="checkbox"]::before {
   color: var(--Color1);
 }
 
+.sliderPage {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 431px;
+}
+
+.sliderPage_title {
+  padding-top: 45px;
+  margin-left: 90px;
+  padding-bottom: 8px;
+}
+
+.slick-slider__block {
+  width: 309px;
+  height: 161px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 12px;
+  padding-top: 10px;
+  margin: 35px;
+  position: relative;
+}
+
+.slick-slider__left-block {
+  display: flex;
+  align-items: flex-end;
+  height: 30px;
+  width: 150px;
+}
+
+.slick-slider__bird {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  left: 230px;
+  top: 15px;
+}
+
+.slick-slider__img {
+  height: 30px;
+}
+
+.slick-slider__title {
+  font-size: 16px;
+  margin: 0;
+  padding-left: 11px;
+}
+
+.slick-slider__text {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+}
+
+.slick-prev:before {
+  background-image: url("images/arrow-left.png");
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+
+.slick-next:before {
+  background-image: url("images/arrow-right.png");
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  height: 161px;
+}
+
+.featured-websites__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  list-style-type: none;
+  margin: 0 180px 70px;
+  padding: 0;
+}
+
 .links-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-left: 140px;
-  width: 1123px;
+  padding-left: 91px;
+  width: 1170px;
   list-style-type: none;
-  padding-bottom: 50px;
+  padding-bottom: 64px;
+  margin: 0 auto;
+}
+
+.sport-chanel {
+  background-color: var(--Color_for_section);
 }
 
 .sport-chanel__title {
-  padding-bottom: 20px;
+  padding-top: 33px;
+  padding-bottom: 39px;
   padding-left: 92px;
 }
 
@@ -504,9 +591,9 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 127px;
-  width: 100%;
-  max-width: 1416px;
-  padding-left: 61px;
+  width: 1415px;
+  padding-left: 50px;
+  margin: 0 auto;
 }
 
 .footer__navigation {
